@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>MyTraining1121AngularDemo.Application</AssemblyName>
+    <PackageId>MyTraining1121AngularDemo.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>MyTraining1121AngularDemo</RootNamespace>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="7.3.0" />
+    <PackageReference Include="NPOI" Version="2.5.6" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyTraining1121AngularDemo.Application.Shared\MyTraining1121AngularDemo.Application.Shared.csproj" />
+    <ProjectReference Include="..\MyTraining1121AngularDemo.Core\MyTraining1121AngularDemo.Core.csproj" />
+    <ProjectReference Include="..\MyTraining1121AngularDemo.EntityFrameworkCore\MyTraining1121AngularDemo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

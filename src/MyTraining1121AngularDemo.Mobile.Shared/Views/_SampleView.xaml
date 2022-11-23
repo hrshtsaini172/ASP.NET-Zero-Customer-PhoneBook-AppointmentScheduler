@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:base="clr-namespace:MyTraining1121AngularDemo.ViewModels.Base;assembly=MyTraining1121AngularDemo.Mobile.Shared"
+             x:Class="MyTraining1121AngularDemo.Views._SampleView"
+             base:ViewManager.AutoWireViewModel="true">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This is sample empty page for MyTraining1121AngularDemo!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
