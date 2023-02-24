@@ -216,13 +216,13 @@ namespace MyTraining1121AngularDemo.Appointments
         //SMS Twilio Function
         public void SendSMS(string msg, string phone)
         {
-            string accountSID = Environment.GetEnvironmentVariable("AC24b48fc4ebccce7536c682657e300ed8");
-            string authToken = Environment.GetEnvironmentVariable("b1ac9022a7f35d12c765f7f6fcd7c35a");
-            TwilioClient.Init(username: "AC24b48fc4ebccce7536c682657e300ed8", password: "b1ac9022a7f35d12c765f7f6fcd7c35a");
+            string accountSID = Environment.GetEnvironmentVariable("<Enter your Twilio accountSID here>");
+            string authToken = Environment.GetEnvironmentVariable("<Enter your Twilio authToken here>");
+            TwilioClient.Init(username: "<Twilio accountSID>", password: "<Twilio authToken>");
             var mediaUrl = new[]
              { new Uri("https://demo.twilio.com/owl.png") }.ToList();
             var message = MessageResource.Create(body: msg,
-                from: new Twilio.Types.PhoneNumber("+13022168910"), mediaUrl: mediaUrl, to: new Twilio.Types.PhoneNumber($"{phone}"));
+                from: new Twilio.Types.PhoneNumber("<Twilio Phone number>"), mediaUrl: mediaUrl, to: new Twilio.Types.PhoneNumber($"{phone}"));
         }
     }
 }
